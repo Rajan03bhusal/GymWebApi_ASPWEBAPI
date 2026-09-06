@@ -29,7 +29,11 @@ builder.Services.AddScoped<IMembershipPlanService, MembershipPlanService>();
 // Member Membership
 builder.Services.AddScoped<IMemberMembershipRepository, MemberMembershipRepository>();
 builder.Services.AddScoped<IMemberMembershipService, MemberMembershipService>();
+//payment 
+builder.Services.AddScoped< IPaymentRepository,PaymentRepository>();
+builder.Services.AddScoped< IPaymentService,PaymentService>();
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

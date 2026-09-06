@@ -138,3 +138,4 @@ E:\Dot_Net\GymSystem\GymSystem\obj\Debug\net8.0\refint\GymSystem.dll
 E:\Dot_Net\GymSystem\GymSystem\obj\Debug\net8.0\GymSystem.pdb
 E:\Dot_Net\GymSystem\GymSystem\obj\Debug\net8.0\GymSystem.genruntimeconfig.cache
 E:\Dot_Net\GymSystem\GymSystem\obj\Debug\net8.0\ref\GymSystem.dll
+E:\Dot_Net\GymSystem\GymSystem\obj\Debug\net8.0\GymSystem.sourcelink.json
