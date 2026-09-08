@@ -1,28 +1,31 @@
-﻿namespace GymSystem.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GymSystem.Dtos.Trainer
 {
-    public class Trainer
+    public class UpdateTrainerDto
     {
-        public int TrainerId { get; set; }
-
-        public string TrainerCode { get; set; } = string.Empty;
-
+        [Required]
+        [MaxLength(100)]
         public string FullName { get; set; } = string.Empty;
 
+        [Required]
+        [MaxLength(20)]
         public string Gender { get; set; } = string.Empty;
 
+        [Required]
+        [Phone]
         public string Phone { get; set; } = string.Empty;
 
+        [Required]
+        [EmailAddress]
         public string Email { get; set; } = string.Empty;
 
+        [MaxLength(100)]
         public string? Specialization { get; set; }
 
+        [Required]
         public DateTime HireDate { get; set; }
 
         public bool IsActive { get; set; }
-
-        public DateTime CreatedAt { get; set; }
-
-        public ICollection<MemberTrainer> MemberTrainers { get; set; }
-            = new List<MemberTrainer>();
     }
 }

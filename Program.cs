@@ -32,8 +32,19 @@ builder.Services.AddScoped<IMemberMembershipService, MemberMembershipService>();
 //payment 
 builder.Services.AddScoped< IPaymentRepository,PaymentRepository>();
 builder.Services.AddScoped< IPaymentService,PaymentService>();
-var app = builder.Build();
+// Trainer
+builder.Services.AddScoped<ITrainerRepository, TrainerRepository>();
+builder.Services.AddScoped<ITrainerService, TrainerService>();
+//MemberTrainer
+builder.Services.AddScoped<IMemberTrainerRepository,MemberTrainerRepository>();
+builder.Services.AddScoped< IMemberTrainerService,MemberTrainerService>();
 
+//Attendance
+builder.Services.AddScoped<IAttendanceRepository,AttendanceRepository>();
+
+builder.Services.AddScoped<IAttendanceService,AttendanceService>();
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

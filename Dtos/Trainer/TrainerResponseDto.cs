@@ -1,6 +1,6 @@
-﻿namespace GymSystem.Models
+﻿namespace GymSystem.Dtos.Trainer
 {
-    public class Trainer
+    public class TrainerResponseDto
     {
         public int TrainerId { get; set; }
 
@@ -17,12 +17,8 @@
         public string? Specialization { get; set; }
 
         public DateTime HireDate { get; set; }
-
         public bool IsActive { get; set; }
 
         public DateTime CreatedAt { get; set; }
-
-        public ICollection<MemberTrainer> MemberTrainers { get; set; }
-            = new List<MemberTrainer>();
     }
 }
